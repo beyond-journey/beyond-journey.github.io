@@ -1,0 +1,26 @@
+{
+  "name": "bejond-journey.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bejond-journey/bejond-journey.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bejond-journey/bejond-journey.github.io/issues"
+  },
+  "homepage": "https://github.com/bejond-journey/bejond-journey.github.io#readme",
+  "dependencies": {
+    "astro": "^1.0.6"
+  }
+}
