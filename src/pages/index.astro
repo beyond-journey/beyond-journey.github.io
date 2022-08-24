@@ -2,6 +2,7 @@
 import Base from "../layouts/base.astro";
 
 import star_surfer from "/img/star_surfer.jpg";
+import dog_1 from "/img/dog_1.jpg";
 ---
 
 <Base>
@@ -11,6 +12,11 @@ import star_surfer from "/img/star_surfer.jpg";
             <a href="/collections/surfer"></a>
             <span>Surfer</span>
         </div>
+        <div>
+            <img src={dog_1} alt="" />
+            <a href="/collections/dog"></a>
+            <span>Dog</span>
+        </div>
     </main>
 </Base>
 
@@ -18,6 +24,7 @@ import star_surfer from "/img/star_surfer.jpg";
     main {
         padding: 2rem;
         display: grid;
+        gap: 2rem;
         grid-template-columns: repeat(auto-fill, minmax(min(100%, 40rem), 1fr));
     }
 
@@ -47,7 +54,6 @@ import star_surfer from "/img/star_surfer.jpg";
 
     div span {
         font-size: 15vh;
-        opacity: 0;
         transform: scale(0.8);
         font-weight: bolder;
         color: white;
@@ -58,9 +64,8 @@ import star_surfer from "/img/star_surfer.jpg";
     }
 
     div:hover span {
-        opacity: 1;
         transform: scale(1);
-        transition: all 0.1s ease-in;
+        transition: all 0.1s ease-in-out;
     }
 
     @media only screen and (max-width: 600px) {

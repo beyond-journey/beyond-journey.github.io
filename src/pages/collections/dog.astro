@@ -1,0 +1,34 @@
+---
+import Base from "../../layouts/base.astro";
+import dog_1 from "/img/dog_1.jpg";
+import dog_2 from "/img/dog_2.jpg";
+import dog_3 from "/img/dog_3.jpg";
+import dog_4 from "/img/dog_4.jpg";
+---
+
+<Base>
+    <main>
+        <img src={dog_1} alt="Star Surfer" decoding="async" loading="lazy" />
+
+        <img src={dog_2} alt="Surfer" decoding="async" loading="lazy" />
+        <img src={dog_3} alt="Aurora Surfer" decoding="async" loading="lazy" />
+
+        <img src={dog_4} alt="Galaxy Surfer" decoding="async" loading="lazy" />
+    </main>
+</Base>
+
+<style>
+    main {
+        padding: 2rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 3 / 4;
+    }
+</style>
