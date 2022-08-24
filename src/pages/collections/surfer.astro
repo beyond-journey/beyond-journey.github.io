@@ -1,0 +1,61 @@
+---
+import Base from "../layouts/base.astro";
+import star_surfer from "/img/star_surfer.jpg";
+import galaxy_surfer from "/img/galaxy_surfer.jpg";
+import black_hole_surfer from "/img/black_hole_surfer.jpg";
+import aurora_surfer from "/img/aurora_surfer.jpg";
+import black_wave from "/img/black_wave.jpg";
+import surfer from "/img/surfer.jpg";
+---
+
+<Base>
+    <main>
+        <img src={star_surfer} alt="Star Surfer" decoding="async" loading="lazy"
+        />
+
+        <img src={surfer} alt="Surfer" decoding="async" loading="lazy" />
+        <img
+            src={aurora_surfer}
+            alt="Aurora Surfer"
+            decoding="async"
+            loading="lazy"
+        />
+
+        <img
+            src={galaxy_surfer}
+            alt="Galaxy Surfer"
+            decoding="async"
+            loading="lazy"
+        />
+
+        <img
+            src={black_hole_surfer}
+            alt="Black Hole Surfer"
+            decoding="async"
+            loading="lazy"
+        />
+
+        <img
+            src={black_wave}
+            alt="Black Hole Surfer"
+            decoding="async"
+            loading="lazy"
+        />
+    </main>
+</Base>
+
+<style>
+    main {
+        padding: 2rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 3 / 4;
+    }
+</style>
