@@ -1,0 +1,30 @@
+---
+import Base from "../../layouts/base.astro";
+import alley_1 from "/img/rain_japan/alleyway_1.jpg";
+import temple_1 from "/img/rain_japan/temple_1";
+
+---
+
+<Base>
+    <main>
+        <img src={alley_1} alt="Rainy Alleyway" decoding="async" loading="lazy" />
+        <img src={temple_1} alt="Rainy Temple" decoding="async" loading="lazy" />
+
+    </main>
+</Base>
+
+<style>
+    main {
+        padding: 2rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 3 / 4;
+    }
+</style>
