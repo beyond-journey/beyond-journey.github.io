@@ -1,0 +1,42 @@
+---
+import Base from "../../layouts/base.astro";
+import ana_world from "/img/another_world_gate.jpeg";
+import biolum_1 from "/img/bioluminescent_gate_1.jpeg";
+import biolum_2 from "/img/bioluminescent_gate_2.jpeg";
+import fanta_gate from "/img/fantasy_gate.jpeg";
+import from_hell_1 from "/img/gate_from_hell_1.jpeg";
+import from_hell_2 from "/img/gate_from_hell_2.jpeg";
+import war_1 from "/img/war_gate_1.jpeg";
+import war_2 from "/img/war_gate_2.jpeg";
+---
+
+<Base>
+    <main>
+        <img src={ana_world} alt="Gate to Another World" decoding="async" loading="lazy"/>
+		<img src={biolum_1} alt="Bioluminescent Gate 1" decoding="async" loading="lazy"/>
+		<img src={biolum_2} alt="Bioluminescent Gate 2" decoding="async" loading="lazy"/>
+		<img src={fanta_gate} alt="Fantasy Gate" decoding="async" loading="lazy"/>
+		<img src={from_hell_1} alt="Gate from Hell 1" decoding="async" loading="lazy"/>
+		<img src={from_hell_2} alt="Gate from Hell 2" decoding="async" loading="lazy"/>
+		<img src={war_1} alt="War Gate 1" decoding="async" loading="lazy"/>
+		<img src={war_2} alt="War Gate 2" decoding="async" loading="lazy"/>
+
+
+    </main>
+</Base>
+
+<style>
+    main {
+        padding: 2rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 3 / 4;
+    }
+</style>
