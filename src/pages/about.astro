@@ -1,0 +1,49 @@
+---
+import Base from "../layouts/base.astro";
+---
+
+<head>
+    <title>Beyond Journey About Us</title>
+</head>
+
+<Base>
+    <article>
+        <h1>We are going beyond</h1>
+        <p>
+            We are going beyond - follow us on our journey of pushing digital
+            art to the next level. <br /> Beyond Journey is an indepentend artist
+            collective, based in Germany with the ambition to overcome the human
+            limitations in creating art. We are creating on the puls of time by utilizing
+            the most novel computational image generation technology and offering
+            a variety of collections, ranging from traditional art of different cultures
+            as well as modern, futuristic and up-to-date motives. <br />
+        </p>
+        <h3>
+            If you want to experience the future of art, you have come to the
+            right place.
+        </h3>
+    </article>
+</Base>
+
+<style>
+    article {
+        display: grid;
+        place-content: center;
+        padding-inline: max((100% - 50rem) /2, 1.2rem);
+        padding-block: 10rem;
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+        padding-block-end: 1rem;
+        font-size: 200%;
+    }
+
+    img {
+        width: 100vw;
+        height: 30vh;
+        object-fit: cover;
+        aspect-ratio: 16 / 9;
+    }
+</style>

@@ -1,33 +1,39 @@
 ---
-import '../styles/global.css'
+import "../styles/global.css";
 ---
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <a href="/"><h1>Beyond Journey</h1></a>
-    </header>
-    <slot></slot>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <a href="/"><h1>Beyond Journey</h1></a>
+            <a href="/about">About Us</a>
+        </header>
+        <slot />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-inline: 2rem;
+                padding-block: 1rem;
+            }
+
+            h1 {
+                font-size: 150%;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </body>
 </html>
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-</style>
